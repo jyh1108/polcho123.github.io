@@ -4,7 +4,8 @@ var next = document.getElementById("next");
 
 var current = 0;
 
-showSlides(current);
+
+
 prev.onclick = prevSlide;
 next.onclick = nextSlide;
 
@@ -26,3 +27,13 @@ function nextSlide() {
   else current = 0;
     showSlides(current);
 }
+
+$("#prev").click(function () {
+  prevSlide();
+}
+); 
+
+$("#next").click(function () {
+  nextSlide();
+}
+); 
